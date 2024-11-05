@@ -1,0 +1,42 @@
+/*
+
+Anotação
+
+isso é crucial,
+
+Dentro de "root:", podemos criar váriaveies que
+vamos poder usar dentro dos comandos, exemplo:
+background-color: var(--exemplo);
+
+O @import, é usado pra importa os comandos do styles.css no caso desse
+arquivo que estamos, para o quais vocês escolher utilizando:
+@import url("styles/exemplo.css");
+
+*/
+
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #2033dd;
+    --branco: #f7f7f7;
+    --laranja: #000000;
+    --azul-degrade: #2033dd;
+    --fonte-principal: "Poppins";
+    --azul: #4c43c7;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #ffffff;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
